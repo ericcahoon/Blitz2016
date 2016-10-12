@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH.Xrm.Plugins.BlitzCapstone", "Blitz 2016 Capstone\CH.Xrm.Plugins.BlitzCapstone.csproj", "{268D27EF-7CFD-4C19-800A-84308179AFC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CH.Xrm.UnitTests.Plugins.BlitzCapstone", "CH.Xrm.UnitTests.Plugins.BlitzCapstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone.csproj", "{87F148E7-B72D-48A0-878C-260234A74715}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{268D27EF-7CFD-4C19-800A-84308179AFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268D27EF-7CFD-4C19-800A-84308179AFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268D27EF-7CFD-4C19-800A-84308179AFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268D27EF-7CFD-4C19-800A-84308179AFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87F148E7-B72D-48A0-878C-260234A74715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87F148E7-B72D-48A0-878C-260234A74715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87F148E7-B72D-48A0-878C-260234A74715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87F148E7-B72D-48A0-878C-260234A74715}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://net.ablebridge.local:8080/tfs/crm%202013
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Blitz\u00202016\u0020Capstone\\CH.Xrm.Plugins.BlitzCapstone.csproj
+		SccProjectName1 = Blitz\u00202016\u0020Capstone
+		SccLocalPath1 = Blitz\u00202016\u0020Capstone
+		SccProjectUniqueName2 = CH.Xrm.UnitTests.Plugins.BlitzCapstone\\CH.Xrm.UnitTests.Plugins.BlitzCapstone.csproj
+		SccProjectName2 = CH.Xrm.UnitTests.Plugins.BlitzCapstone
+		SccLocalPath2 = CH.Xrm.UnitTests.Plugins.BlitzCapstone
+	EndGlobalSection
+EndGlobal

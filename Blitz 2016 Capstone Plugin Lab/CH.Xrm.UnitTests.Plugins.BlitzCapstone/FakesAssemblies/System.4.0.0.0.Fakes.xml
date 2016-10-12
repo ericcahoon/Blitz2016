@@ -1,0 +1,884 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>System.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Net.Fakes.ShimWebClient">
+            <summary>Shim type of System.Net.WebClient</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.#ctor(System.Net.WebClient)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="T:System.Net.Fakes.ShimWebClient.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.AllowReadStreamBufferingGet">
+            <summary>Sets the shim of WebClient.get_AllowReadStreamBuffering()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.AllowReadStreamBufferingSetBoolean">
+            <summary>Sets the shim of WebClient.set_AllowReadStreamBuffering(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.AllowWriteStreamBufferingGet">
+            <summary>Sets the shim of WebClient.get_AllowWriteStreamBuffering()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.AllowWriteStreamBufferingSetBoolean">
+            <summary>Sets the shim of WebClient.set_AllowWriteStreamBuffering(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.BaseAddressGet">
+            <summary>Sets the shim of WebClient.get_BaseAddress()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.BaseAddressSetString">
+            <summary>Sets the shim of WebClient.set_BaseAddress(String value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.CachePolicyGet">
+            <summary>Sets the shim of WebClient.get_CachePolicy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.CachePolicySetRequestCachePolicy">
+            <summary>Sets the shim of WebClient.set_CachePolicy(RequestCachePolicy value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.CancelAsync">
+            <summary>Sets the shim of WebClient.CancelAsync()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.CredentialsGet">
+            <summary>Sets the shim of WebClient.get_Credentials()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.CredentialsSetICredentials">
+            <summary>Sets the shim of WebClient.set_Credentials(ICredentials value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadDataAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataAsyncUriObject">
+            <summary>Sets the shim of WebClient.DownloadDataAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataCompletedAddDownloadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadDataCompleted(DownloadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataCompletedRemoveDownloadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadDataCompleted(DownloadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataString">
+            <summary>Sets the shim of WebClient.DownloadData(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataTaskAsyncString">
+            <summary>Sets the shim of WebClient.DownloadDataTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataTaskAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadDataTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadDataUri">
+            <summary>Sets the shim of WebClient.DownloadData(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileAsyncUriString">
+            <summary>Sets the shim of WebClient.DownloadFileAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileAsyncUriStringObject">
+            <summary>Sets the shim of WebClient.DownloadFileAsync(Uri address, String fileName, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileCompletedAddAsyncCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadFileCompleted(AsyncCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileCompletedRemoveAsyncCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadFileCompleted(AsyncCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileStringString">
+            <summary>Sets the shim of WebClient.DownloadFile(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.DownloadFileTaskAsync(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.DownloadFileTaskAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadFileUriString">
+            <summary>Sets the shim of WebClient.DownloadFile(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadProgressChangedAddDownloadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadProgressChanged(DownloadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadProgressChangedRemoveDownloadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadProgressChanged(DownloadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadStringAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringAsyncUriObject">
+            <summary>Sets the shim of WebClient.DownloadStringAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringCompletedAddDownloadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadStringCompleted(DownloadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringCompletedRemoveDownloadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadStringCompleted(DownloadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringString">
+            <summary>Sets the shim of WebClient.DownloadString(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringTaskAsyncString">
+            <summary>Sets the shim of WebClient.DownloadStringTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringTaskAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadStringTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.DownloadStringUri">
+            <summary>Sets the shim of WebClient.DownloadString(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.EncodingGet">
+            <summary>Sets the shim of WebClient.get_Encoding()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.EncodingSetEncoding">
+            <summary>Sets the shim of WebClient.set_Encoding(Encoding value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.GetWebRequestUri">
+            <summary>Sets the shim of WebClient.GetWebRequest(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.GetWebResponseWebRequest">
+            <summary>Sets the shim of WebClient.GetWebResponse(WebRequest request)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.GetWebResponseWebRequestIAsyncResult">
+            <summary>Sets the shim of WebClient.GetWebResponse(WebRequest request, IAsyncResult result)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.HeadersGet">
+            <summary>Sets the shim of WebClient.get_Headers()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.HeadersSetWebHeaderCollection">
+            <summary>Sets the shim of WebClient.set_Headers(WebHeaderCollection value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.IsBusyGet">
+            <summary>Sets the shim of WebClient.get_IsBusy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnDownloadDataCompletedDownloadDataCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadDataCompleted(DownloadDataCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnDownloadFileCompletedAsyncCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadFileCompleted(AsyncCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnDownloadProgressChangedDownloadProgressChangedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadProgressChanged(DownloadProgressChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnDownloadStringCompletedDownloadStringCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadStringCompleted(DownloadStringCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnOpenReadCompletedOpenReadCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnOpenReadCompleted(OpenReadCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnOpenWriteCompletedOpenWriteCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnOpenWriteCompleted(OpenWriteCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnUploadDataCompletedUploadDataCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadDataCompleted(UploadDataCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnUploadFileCompletedUploadFileCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadFileCompleted(UploadFileCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnUploadProgressChangedUploadProgressChangedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadProgressChanged(UploadProgressChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnUploadStringCompletedUploadStringCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadStringCompleted(UploadStringCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnUploadValuesCompletedUploadValuesCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadValuesCompleted(UploadValuesCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OnWriteStreamClosedWriteStreamClosedEventArgs">
+            <summary>Sets the shim of WebClient.OnWriteStreamClosed(WriteStreamClosedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadAsyncUri">
+            <summary>Sets the shim of WebClient.OpenReadAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadAsyncUriObject">
+            <summary>Sets the shim of WebClient.OpenReadAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadCompletedAddOpenReadCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_OpenReadCompleted(OpenReadCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadCompletedRemoveOpenReadCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_OpenReadCompleted(OpenReadCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadString">
+            <summary>Sets the shim of WebClient.OpenRead(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadTaskAsyncString">
+            <summary>Sets the shim of WebClient.OpenReadTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadTaskAsyncUri">
+            <summary>Sets the shim of WebClient.OpenReadTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenReadUri">
+            <summary>Sets the shim of WebClient.OpenRead(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteAsyncUri">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteAsyncUriString">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteAsyncUriStringObject">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address, String method, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteCompletedAddOpenWriteCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_OpenWriteCompleted(OpenWriteCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteCompletedRemoveOpenWriteCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_OpenWriteCompleted(OpenWriteCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteString">
+            <summary>Sets the shim of WebClient.OpenWrite(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteStringString">
+            <summary>Sets the shim of WebClient.OpenWrite(String address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteTaskAsyncString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(String address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteTaskAsyncUri">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteUri">
+            <summary>Sets the shim of WebClient.OpenWrite(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.OpenWriteUriString">
+            <summary>Sets the shim of WebClient.OpenWrite(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.ProxyGet">
+            <summary>Sets the shim of WebClient.get_Proxy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.ProxySetIWebProxy">
+            <summary>Sets the shim of WebClient.set_Proxy(IWebProxy value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.QueryStringGet">
+            <summary>Sets the shim of WebClient.get_QueryString()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.QueryStringSetNameValueCollection">
+            <summary>Sets the shim of WebClient.set_QueryString(NameValueCollection value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.ResponseHeadersGet">
+            <summary>Sets the shim of WebClient.get_ResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataAsyncUriByteArray">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataAsyncUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataAsyncUriStringByteArrayObject">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, String method, Byte[] data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataCompletedAddUploadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadDataCompleted(UploadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataCompletedRemoveUploadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadDataCompleted(UploadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(String address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataStringStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(String address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataTaskAsyncStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(String address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataTaskAsyncStringStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(String address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataTaskAsyncUriByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataTaskAsyncUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataUriByteArray">
+            <summary>Sets the shim of WebClient.UploadData(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadDataUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileAsyncUriStringStringObject">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String method, String fileName, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileCompletedAddUploadFileCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadFileCompleted(UploadFileCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileCompletedRemoveUploadFileCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadFileCompleted(UploadFileCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileStringString">
+            <summary>Sets the shim of WebClient.UploadFile(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileStringStringString">
+            <summary>Sets the shim of WebClient.UploadFile(String address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileTaskAsyncStringStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(String address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileTaskAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileUriString">
+            <summary>Sets the shim of WebClient.UploadFile(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadFileUriStringString">
+            <summary>Sets the shim of WebClient.UploadFile(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadProgressChangedAddUploadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadProgressChanged(UploadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadProgressChangedRemoveUploadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadProgressChanged(UploadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringAsyncUriStringStringObject">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String method, String data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringCompletedAddUploadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadStringCompleted(UploadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringCompletedRemoveUploadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadStringCompleted(UploadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringStringString">
+            <summary>Sets the shim of WebClient.UploadString(String address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringStringStringString">
+            <summary>Sets the shim of WebClient.UploadString(String address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(String address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringTaskAsyncStringStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(String address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringTaskAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringUriString">
+            <summary>Sets the shim of WebClient.UploadString(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadStringUriStringString">
+            <summary>Sets the shim of WebClient.UploadString(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesAsyncUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesAsyncUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesAsyncUriStringNameValueCollectionObject">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, String method, NameValueCollection data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesCompletedAddUploadValuesCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadValuesCompleted(UploadValuesCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesCompletedRemoveUploadValuesCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadValuesCompleted(UploadValuesCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(String address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesStringStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(String address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesTaskAsyncStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(String address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesTaskAsyncStringStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(String address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesTaskAsyncUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesTaskAsyncUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UploadValuesUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UseDefaultCredentialsGet">
+            <summary>Sets the shim of WebClient.get_UseDefaultCredentials()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.UseDefaultCredentialsSetBoolean">
+            <summary>Sets the shim of WebClient.set_UseDefaultCredentials(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.WriteStreamClosedAddWriteStreamClosedEventHandler">
+            <summary>Sets the shim of WebClient.add_WriteStreamClosed(WriteStreamClosedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllInstances.WriteStreamClosedRemoveWriteStreamClosedEventHandler">
+            <summary>Sets the shim of WebClient.remove_WriteStreamClosed(WriteStreamClosedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllowReadStreamBufferingGet">
+            <summary>Sets the shim of WebClient.get_AllowReadStreamBuffering()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllowReadStreamBufferingSetBoolean">
+            <summary>Sets the shim of WebClient.set_AllowReadStreamBuffering(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllowWriteStreamBufferingGet">
+            <summary>Sets the shim of WebClient.get_AllowWriteStreamBuffering()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.AllowWriteStreamBufferingSetBoolean">
+            <summary>Sets the shim of WebClient.set_AllowWriteStreamBuffering(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.BaseAddressGet">
+            <summary>Sets the shim of WebClient.get_BaseAddress()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.BaseAddressSetString">
+            <summary>Sets the shim of WebClient.set_BaseAddress(String value)</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.Bind(System.ComponentModel.IComponent)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="M:System.Net.Fakes.ShimWebClient.Bind(System.IDisposable)">
+            <summary>Binds the members of the interface to the shim.</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.CachePolicyGet">
+            <summary>Sets the shim of WebClient.get_CachePolicy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.CachePolicySetRequestCachePolicy">
+            <summary>Sets the shim of WebClient.set_CachePolicy(RequestCachePolicy value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.CancelAsync">
+            <summary>Sets the shim of WebClient.CancelAsync()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.Constructor">
+            <summary>Sets the shim of WebClient.WebClient()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.CredentialsGet">
+            <summary>Sets the shim of WebClient.get_Credentials()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.CredentialsSetICredentials">
+            <summary>Sets the shim of WebClient.set_Credentials(ICredentials value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadDataAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataAsyncUriObject">
+            <summary>Sets the shim of WebClient.DownloadDataAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataCompletedAddDownloadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadDataCompleted(DownloadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataCompletedRemoveDownloadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadDataCompleted(DownloadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataString">
+            <summary>Sets the shim of WebClient.DownloadData(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataTaskAsyncString">
+            <summary>Sets the shim of WebClient.DownloadDataTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataTaskAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadDataTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadDataUri">
+            <summary>Sets the shim of WebClient.DownloadData(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileAsyncUriString">
+            <summary>Sets the shim of WebClient.DownloadFileAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileAsyncUriStringObject">
+            <summary>Sets the shim of WebClient.DownloadFileAsync(Uri address, String fileName, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileCompletedAddAsyncCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadFileCompleted(AsyncCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileCompletedRemoveAsyncCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadFileCompleted(AsyncCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileStringString">
+            <summary>Sets the shim of WebClient.DownloadFile(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.DownloadFileTaskAsync(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.DownloadFileTaskAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadFileUriString">
+            <summary>Sets the shim of WebClient.DownloadFile(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadProgressChangedAddDownloadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadProgressChanged(DownloadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadProgressChangedRemoveDownloadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadProgressChanged(DownloadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadStringAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringAsyncUriObject">
+            <summary>Sets the shim of WebClient.DownloadStringAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringCompletedAddDownloadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_DownloadStringCompleted(DownloadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringCompletedRemoveDownloadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_DownloadStringCompleted(DownloadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringString">
+            <summary>Sets the shim of WebClient.DownloadString(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringTaskAsyncString">
+            <summary>Sets the shim of WebClient.DownloadStringTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringTaskAsyncUri">
+            <summary>Sets the shim of WebClient.DownloadStringTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.DownloadStringUri">
+            <summary>Sets the shim of WebClient.DownloadString(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.EncodingGet">
+            <summary>Sets the shim of WebClient.get_Encoding()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.EncodingSetEncoding">
+            <summary>Sets the shim of WebClient.set_Encoding(Encoding value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.GetWebRequestUri">
+            <summary>Sets the shim of WebClient.GetWebRequest(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.GetWebResponseWebRequest">
+            <summary>Sets the shim of WebClient.GetWebResponse(WebRequest request)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.GetWebResponseWebRequestIAsyncResult">
+            <summary>Sets the shim of WebClient.GetWebResponse(WebRequest request, IAsyncResult result)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.HeadersGet">
+            <summary>Sets the shim of WebClient.get_Headers()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.HeadersSetWebHeaderCollection">
+            <summary>Sets the shim of WebClient.set_Headers(WebHeaderCollection value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.IsBusyGet">
+            <summary>Sets the shim of WebClient.get_IsBusy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnDownloadDataCompletedDownloadDataCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadDataCompleted(DownloadDataCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnDownloadFileCompletedAsyncCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadFileCompleted(AsyncCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnDownloadProgressChangedDownloadProgressChangedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadProgressChanged(DownloadProgressChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnDownloadStringCompletedDownloadStringCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnDownloadStringCompleted(DownloadStringCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnOpenReadCompletedOpenReadCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnOpenReadCompleted(OpenReadCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnOpenWriteCompletedOpenWriteCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnOpenWriteCompleted(OpenWriteCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnUploadDataCompletedUploadDataCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadDataCompleted(UploadDataCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnUploadFileCompletedUploadFileCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadFileCompleted(UploadFileCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnUploadProgressChangedUploadProgressChangedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadProgressChanged(UploadProgressChangedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnUploadStringCompletedUploadStringCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadStringCompleted(UploadStringCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnUploadValuesCompletedUploadValuesCompletedEventArgs">
+            <summary>Sets the shim of WebClient.OnUploadValuesCompleted(UploadValuesCompletedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OnWriteStreamClosedWriteStreamClosedEventArgs">
+            <summary>Sets the shim of WebClient.OnWriteStreamClosed(WriteStreamClosedEventArgs e)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadAsyncUri">
+            <summary>Sets the shim of WebClient.OpenReadAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadAsyncUriObject">
+            <summary>Sets the shim of WebClient.OpenReadAsync(Uri address, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadCompletedAddOpenReadCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_OpenReadCompleted(OpenReadCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadCompletedRemoveOpenReadCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_OpenReadCompleted(OpenReadCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadString">
+            <summary>Sets the shim of WebClient.OpenRead(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadTaskAsyncString">
+            <summary>Sets the shim of WebClient.OpenReadTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadTaskAsyncUri">
+            <summary>Sets the shim of WebClient.OpenReadTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenReadUri">
+            <summary>Sets the shim of WebClient.OpenRead(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteAsyncUri">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteAsyncUriString">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteAsyncUriStringObject">
+            <summary>Sets the shim of WebClient.OpenWriteAsync(Uri address, String method, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteCompletedAddOpenWriteCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_OpenWriteCompleted(OpenWriteCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteCompletedRemoveOpenWriteCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_OpenWriteCompleted(OpenWriteCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteString">
+            <summary>Sets the shim of WebClient.OpenWrite(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteStringString">
+            <summary>Sets the shim of WebClient.OpenWrite(String address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteTaskAsyncString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(String address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(String address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteTaskAsyncUri">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.OpenWriteTaskAsync(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteUri">
+            <summary>Sets the shim of WebClient.OpenWrite(Uri address)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.OpenWriteUriString">
+            <summary>Sets the shim of WebClient.OpenWrite(Uri address, String method)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.ProxyGet">
+            <summary>Sets the shim of WebClient.get_Proxy()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.ProxySetIWebProxy">
+            <summary>Sets the shim of WebClient.set_Proxy(IWebProxy value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.QueryStringGet">
+            <summary>Sets the shim of WebClient.get_QueryString()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.QueryStringSetNameValueCollection">
+            <summary>Sets the shim of WebClient.set_QueryString(NameValueCollection value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.ResponseHeadersGet">
+            <summary>Sets the shim of WebClient.get_ResponseHeaders()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataAsyncUriByteArray">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataAsyncUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataAsyncUriStringByteArrayObject">
+            <summary>Sets the shim of WebClient.UploadDataAsync(Uri address, String method, Byte[] data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataCompletedAddUploadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadDataCompleted(UploadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataCompletedRemoveUploadDataCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadDataCompleted(UploadDataCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(String address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataStringStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(String address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataTaskAsyncStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(String address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataTaskAsyncStringStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(String address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataTaskAsyncUriByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataTaskAsyncUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadDataTaskAsync(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataUriByteArray">
+            <summary>Sets the shim of WebClient.UploadData(Uri address, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadDataUriStringByteArray">
+            <summary>Sets the shim of WebClient.UploadData(Uri address, String method, Byte[] data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileAsyncUriStringStringObject">
+            <summary>Sets the shim of WebClient.UploadFileAsync(Uri address, String method, String fileName, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileCompletedAddUploadFileCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadFileCompleted(UploadFileCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileCompletedRemoveUploadFileCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadFileCompleted(UploadFileCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileStringString">
+            <summary>Sets the shim of WebClient.UploadFile(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileStringStringString">
+            <summary>Sets the shim of WebClient.UploadFile(String address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(String address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileTaskAsyncStringStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(String address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileTaskAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadFileTaskAsync(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileUriString">
+            <summary>Sets the shim of WebClient.UploadFile(Uri address, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadFileUriStringString">
+            <summary>Sets the shim of WebClient.UploadFile(Uri address, String method, String fileName)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadProgressChangedAddUploadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadProgressChanged(UploadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadProgressChangedRemoveUploadProgressChangedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadProgressChanged(UploadProgressChangedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringAsyncUriStringStringObject">
+            <summary>Sets the shim of WebClient.UploadStringAsync(Uri address, String method, String data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringCompletedAddUploadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadStringCompleted(UploadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringCompletedRemoveUploadStringCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadStringCompleted(UploadStringCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringStringString">
+            <summary>Sets the shim of WebClient.UploadString(String address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringStringStringString">
+            <summary>Sets the shim of WebClient.UploadString(String address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringTaskAsyncStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(String address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringTaskAsyncStringStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(String address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringTaskAsyncUriString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringTaskAsyncUriStringString">
+            <summary>Sets the shim of WebClient.UploadStringTaskAsync(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringUriString">
+            <summary>Sets the shim of WebClient.UploadString(Uri address, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadStringUriStringString">
+            <summary>Sets the shim of WebClient.UploadString(Uri address, String method, String data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesAsyncUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesAsyncUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesAsyncUriStringNameValueCollectionObject">
+            <summary>Sets the shim of WebClient.UploadValuesAsync(Uri address, String method, NameValueCollection data, Object userToken)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesCompletedAddUploadValuesCompletedEventHandler">
+            <summary>Sets the shim of WebClient.add_UploadValuesCompleted(UploadValuesCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesCompletedRemoveUploadValuesCompletedEventHandler">
+            <summary>Sets the shim of WebClient.remove_UploadValuesCompleted(UploadValuesCompletedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(String address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesStringStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(String address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesTaskAsyncStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(String address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesTaskAsyncStringStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(String address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesTaskAsyncUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesTaskAsyncUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValuesTaskAsync(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesUriNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(Uri address, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UploadValuesUriStringNameValueCollection">
+            <summary>Sets the shim of WebClient.UploadValues(Uri address, String method, NameValueCollection data)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UseDefaultCredentialsGet">
+            <summary>Sets the shim of WebClient.get_UseDefaultCredentials()</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.UseDefaultCredentialsSetBoolean">
+            <summary>Sets the shim of WebClient.set_UseDefaultCredentials(Boolean value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.WriteStreamClosedAddWriteStreamClosedEventHandler">
+            <summary>Sets the shim of WebClient.add_WriteStreamClosed(WriteStreamClosedEventHandler value)</summary>
+        </member>
+        <member name="P:System.Net.Fakes.ShimWebClient.WriteStreamClosedRemoveWriteStreamClosedEventHandler">
+            <summary>Sets the shim of WebClient.remove_WriteStreamClosed(WriteStreamClosedEventHandler value)</summary>
+        </member>
+    </members>
+</doc>

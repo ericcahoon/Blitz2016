@@ -1,0 +1,10 @@
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\CH.Xrm.Plugins.BlitzCapstone.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\CH.Xrm.Plugins.BlitzCapstone.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\Microsoft.IdentityModel.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\Microsoft.Xrm.Sdk.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\bin\Debug\Microsoft.Xrm.Sdk.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\obj\Debug\CH.Xrm.Plugins.BlitzCapstone.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\obj\Debug\CH.Xrm.Plugins.BlitzCapstone.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\Blitz 2016 Capstone\obj\Debug\CH.Xrm.Plugins.BlitzCapstone.csprojResolveAssemblyReference.cache

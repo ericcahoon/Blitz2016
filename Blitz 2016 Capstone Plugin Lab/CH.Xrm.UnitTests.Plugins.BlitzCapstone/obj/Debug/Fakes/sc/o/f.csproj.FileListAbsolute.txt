@@ -1,0 +1,15 @@
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\System.Core.4.0.0.0.Fakes.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\System.Core.4.0.0.0.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\System.Core.4.0.0.0.Fakes.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\CH.Xrm.Plugins.BlitzCapstone.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.Crm.Sdk.Proxy.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.VisualStudio.QualityTools.UTFResources.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.Xrm.Sdk.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\CH.Xrm.Plugins.BlitzCapstone.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.Crm.Sdk.Proxy.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\b\Microsoft.Xrm.Sdk.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\o\f.csprojResolveAssemblyReference.cache
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\o\System.Core.4.0.0.0.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\sc\o\System.Core.4.0.0.0.Fakes.pdb

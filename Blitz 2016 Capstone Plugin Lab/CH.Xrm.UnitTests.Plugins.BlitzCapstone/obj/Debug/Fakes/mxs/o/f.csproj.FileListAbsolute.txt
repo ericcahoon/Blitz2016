@@ -1,0 +1,12 @@
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.Xrm.Sdk.8.0.0.0.Fakes.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.Xrm.Sdk.8.0.0.0.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.Xrm.Sdk.8.0.0.0.Fakes.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\CH.Xrm.Plugins.BlitzCapstone.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.Xrm.Sdk.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\System.Xaml.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\Microsoft.Xrm.Sdk.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\b\CH.Xrm.Plugins.BlitzCapstone.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\o\f.csprojResolveAssemblyReference.cache
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\o\Microsoft.Xrm.Sdk.8.0.0.0.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\mxs\o\Microsoft.Xrm.Sdk.8.0.0.0.Fakes.pdb

@@ -1,0 +1,15 @@
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\CH.Xrm.Plugins.BlitzCapstone.Fakes.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\CH.Xrm.Plugins.BlitzCapstone.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\CH.Xrm.Plugins.BlitzCapstone.Fakes.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\CH.Xrm.Plugins.BlitzCapstone.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.Crm.Sdk.Proxy.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.VisualStudio.QualityTools.UTFResources.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.Xrm.Sdk.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\CH.Xrm.Plugins.BlitzCapstone.pdb
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.Xrm.Sdk.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\b\Microsoft.Crm.Sdk.Proxy.xml
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\o\f.csprojResolveAssemblyReference.cache
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\o\CH.Xrm.Plugins.BlitzCapstone.Fakes.dll
+C:\Data\_dev\_src\internal\Blitz 2016 Capstone\CH.Xrm.UnitTests.Plugins.BlitzCapstone\obj\Debug\Fakes\chxpbc\o\CH.Xrm.Plugins.BlitzCapstone.Fakes.pdb

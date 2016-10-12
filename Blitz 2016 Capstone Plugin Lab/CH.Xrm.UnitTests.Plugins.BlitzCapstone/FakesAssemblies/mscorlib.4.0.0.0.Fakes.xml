@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>mscorlib.4.0.0.0.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:System.Fakes.StubIServiceProvider">
+            <summary>Stub type of System.IServiceProvider</summary>
+        </member>
+        <member name="M:System.Fakes.StubIServiceProvider.#ctor">
+            <summary>Initializes a new instance of type StubIServiceProvider</summary>
+        </member>
+        <member name="F:System.Fakes.StubIServiceProvider.GetServiceType">
+            <summary>Sets the stub of IServiceProvider.GetService(Type serviceType)</summary>
+        </member>
+        <member name="M:System.Fakes.StubIServiceProvider.System#IServiceProvider#GetService(System.Type)">
+            <summary>Sets the stub of IServiceProvider.GetService(Type serviceType)</summary>
+        </member>
+    </members>
+</doc>

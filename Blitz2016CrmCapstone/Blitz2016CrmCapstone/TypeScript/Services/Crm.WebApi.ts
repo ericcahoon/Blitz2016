@@ -306,7 +306,7 @@ export module Crm {
             req.setRequestHeader("OData-Version", "4.0");
             req.setRequestHeader("Accept", "application/json");
             req.setRequestHeader("Authorization", `Bearer ${token}`);
-            req.setRequestHeader("Access-Control-Allow-Origin", "localhost");
+            req.setRequestHeader("Access-Control-Allow-Origin", window.location.origin + "/");
 
             headers = headers || [];
             for (let header of headers) {

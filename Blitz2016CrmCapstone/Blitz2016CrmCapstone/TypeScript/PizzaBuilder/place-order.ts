@@ -37,7 +37,7 @@ export class PlaceOrderDialog {
     }
 
     private submitOrder() {
-        /// <summary></summary>
+
         let order = {
         
         };

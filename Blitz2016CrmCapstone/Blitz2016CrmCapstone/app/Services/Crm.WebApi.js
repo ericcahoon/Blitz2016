@@ -220,7 +220,7 @@ var Crm;
             req.setRequestHeader("OData-Version", "4.0");
             req.setRequestHeader("Accept", "application/json");
             req.setRequestHeader("Authorization", "Bearer " + token);
-            req.setRequestHeader("Access-Control-Allow-Origin", "localhost");
+            req.setRequestHeader("Access-Control-Allow-Origin", window.location.origin + "/");
             headers = headers || [];
             for (var _i = 0, headers_1 = headers; _i < headers_1.length; _i++) {
                 var header = headers_1[_i];

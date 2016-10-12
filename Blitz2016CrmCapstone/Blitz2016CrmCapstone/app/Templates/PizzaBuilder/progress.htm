@@ -1,0 +1,9 @@
+﻿<div class="progress">
+    <div class="leftEndcap progress__step progress__step--static is-hidden@handheld">(</div>
+    <div class="step progress__step c-sizeCrust activeStep" id="sizeCrust">Size &amp; Crust</div>
+    <div [class.activeSeperator]="ActiveStep === 0" [class.seperatorBoth]="ActiveStep>0"  class="seperator progress__step progress__step--static">/</div>
+    <div [class.activeStep]="ActiveStep > 0" class="step progress__step c-cheeseSauce" id="cheeseSauce">Cheese &amp; Sauce</div>
+    <div [class.activeSeperator]="ActiveStep === 1" [class.seperatorBoth]="ActiveStep > 1" class="seperator progress__step progress__step--static">/</div>
+    <div [class.activeStep]="ActiveStep === 2" class="step progress__step c-toppings" id="toppings">Toppings</div>
+    <div [class.rightActiveEndcap]="ActiveStep === 2" class="rightEndcap progress__step progress__step--static is-hidden@handheld">)</div>
+</div>

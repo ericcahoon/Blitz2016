@@ -1,0 +1,46 @@
+﻿
+<div class="dialog-background"></div>
+<div class="dialog-container">
+    <div class="dialog">
+        <header>Contact Info</header>
+        <div *ngIf="_isSaving && !_isSubmitted" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+            <div style="position: absolute; top: 40%; left: calc(50% - 40px); text-align: center">
+                <img src="/app/Images/progress.gif" alt="Progress..." />
+                <p>Please wait...</p>
+            </div>
+        </div>
+        <div *ngIf="!_isSaving && _isSubmitted" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+            <div style="position: absolute;left: 0;top: 10px;right: 0;bottom: 0;padding: 10px;">
+                <h3>Thank you!</h3>
+                <p>Your order has been submitted.  We'll send you a text when your order is ready</p>
+                <div class="dialog-controls">
+                    <button (click)="closeDialog();">Close</button>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!_isSaving && !_isSubmitted">
+            <div class="Label">
+                First Name
+                <div class="dialog-input">
+                    <input [(ngModel)]="_firstName" style="width: 100%;" class="ng-invalid" required name="FirstName" #firstname />
+                </div>
+            </div>
+            <div class="Label">
+                Last Name
+                <div class="dialog-input">
+                    <input [(ngModel)]="_lastName" style="width: 100%;" class="ng-invalid" required />
+                </div>
+            </div>
+            <div class="Label">
+                Phone
+                <div class="dialog-input">
+                    <input [(ngModel)]="_phone" style="width: 100%;" class="ng-invalid" required/>
+                </div>
+            </div>
+            <div class="dialog-controls">
+                <button (click)="submitOrder();" [disabled]="!_firstName || !_lastName || !_phone">OK</button>
+                <button (click)="closeDialog();">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>

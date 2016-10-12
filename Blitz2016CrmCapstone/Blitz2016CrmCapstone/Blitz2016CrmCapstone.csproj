@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CA2781F5-8146-4958-A6B7-13001BF5845A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Blitz2016CrmCapstone</RootNamespace>
+    <AssemblyName>Blitz2016CrmCapstone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\adal.js" />
+    <Content Include="app\Images\bar-over.jpg" />
+    <Content Include="app\Images\BK.png" />
+    <Content Include="app\Images\BK_mask.png" />
+    <Content Include="app\Images\left-endcap.jpg" />
+    <Content Include="app\Images\progress.gif" />
+    <Content Include="app\Images\right-endcap-over.jpg" />
+    <Content Include="app\Images\right-endcap.jpg" />
+    <Content Include="app\Images\seperator-both.jpg" />
+    <Content Include="app\Images\seperator-over.jpg" />
+    <Content Include="app\Images\seperator.jpg" />
+    <Content Include="app\Images\specialty.png" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog.htm" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog-submit-inquiry-form.htm" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog.css" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog-ListOfVehicles.htm" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog-SearchCriteria.htm" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog-SelectedVois.htm" />
+    <Content Include="app\Templates\Inventory\inventory-lookup-dialog-VehicleDetail.htm" />
+    <Content Include="app\Templates\PizzaBuilder\container-Old.htm" />
+    <Content Include="app\Templates\PizzaBuilder\container.htm" />
+    <Content Include="app\Templates\PizzaBuilder\default.css" />
+    <Content Include="app\Templates\PizzaBuilder\myorder.htm" />
+    <Content Include="app\Templates\PizzaBuilder\place-order-dialog.htm" />
+    <Content Include="app\Templates\PizzaBuilder\progress.htm" />
+    <Content Include="app\Templates\PizzaBuilder\select-cheese-and-sauce.htm" />
+    <Content Include="app\Templates\PizzaBuilder\select-crust.htm" />
+    <Content Include="app\Templates\PizzaBuilder\select-toppings.htm" />
+    <Content Include="package.json" />
+    <Content Include="systemjs.config.js" />
+    <Content Include="typings.json" />
+    <Content Include="typings\globals\angular-protractor\typings.json" />
+    <Content Include="typings\globals\core-js\typings.json" />
+    <Content Include="typings\globals\jasmine\typings.json" />
+    <Content Include="typings\globals\node\typings.json" />
+    <Content Include="typings\globals\selenium-webdriver\typings.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="styles.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <TypeScriptCompile Include="TypeScript\app.module.ts" />
+    <TypeScriptCompile Include="TypeScript\app.component.ts" />
+    <TypeScriptCompile Include="TypeScript\Crm.Config.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\Contact.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\CrmConfig.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\Exception.ts" />
+    <TypeScriptCompile Include="TypeScript\main.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\OptionSet.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\PizzaBuilder\CrustTypes.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\PizzaBuilder\OrderSteps.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\PizzaBuilder\Pizza.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\PizzaBuilder\PizzaSizes.ts" />
+    <TypeScriptCompile Include="TypeScript\Models\PizzaBuilder\SauceTypes.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\container.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\myorder.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\place-order.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\progress.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\select-crust.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\select-cheese-and-sauce.ts" />
+    <TypeScriptCompile Include="TypeScript\PizzaBuilder\select-toppings.ts" />
+    <TypeScriptCompile Include="TypeScript\Services\Crm.WebApi.ts" />
+    <TypeScriptCompile Include="TypeScript\Services\PizzaToppings.ts" />
+    <TypeScriptCompile Include="typings\Azure-ActiveDirectory-Library\adal.d.ts" />
+    <TypeScriptCompile Include="typings\globals\angular-protractor\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\core-js\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\jasmine\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\globals\selenium-webdriver\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptModuleKind>commonjs</TypeScriptModuleKind>
+    <TypeScriptModuleResolution>node</TypeScriptModuleResolution>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutDir>C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\app</TypeScriptOutDir>
+    <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>43408</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8013/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

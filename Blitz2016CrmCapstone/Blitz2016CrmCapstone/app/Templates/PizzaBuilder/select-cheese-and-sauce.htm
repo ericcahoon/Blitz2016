@@ -1,0 +1,76 @@
+﻿<div class="form__control-group--actions--steps is-hidden@widescreen" style="position: absolute; left: 0; right: 5px; bottom: 0;">
+    <a (click)="this.stepChange.emit(-1);" class="js-prev btn btn--small btn--secondary btn--back c-order-back" href="#" data-dpz-track-evt-pagename="Pizza Builder">
+        <span>Back</span>
+    </a>    
+    <a (click)="this.stepChange.emit(1);"  class="js-next btn btn--small btn--next c-order-nextStep" href="#" data-dpz-track-evt-pagename="Pizza Builder">Next Step</a>
+</div>
+<div id="cheeseSauceWrapper" class="is-hidden grid" style="display: block;">
+    <div class="grid__cell--1">
+        <h2 class="step-title">Cheese &amp; Sauce</h2>
+    </div>
+    <div class="product choose-cheese grid__cell--1 grid__cell--1/4@desktop">
+        <h3 class="section-title">Cheese</h3>
+        <div class="topping cheese">
+            <label class="form__control-group--toggle">
+                <input [(ngModel)]="_addCheese" type="checkbox" class="selectTopping c-topping-C" name="S_PIZZA|Topping|C|SPLIT"> <span class="btn--toggle">Cheese</span>
+            </label>
+            <div *ngIf="_addCheese" class="toppingSettings is-hidden" style="display: block;">
+                <div class="topping split">
+                    <div class="LeftInactive portion c-toppingportion-C-Left">
+                        <input type="radio" aria-label="Cheese" name="Part|C--1" value="1/2">
+                    </div>
+                    <div class="WholeActive portion c-toppingportion-C-Whole">
+                        <input type="radio" aria-label="Cheese" name="Part|C--1" value="1/1">
+                    </div>
+                    <div class="RightInactive portion c-toppingportion-C-Right">
+                        <input type="radio" aria-label="Cheese" name="Part|C--1" value="2/2">
+                    </div> <select aria-label="Cheese Amount" class="weight" name="Weight|C--1"><option value="0" style="display: none;">None</option><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                </div>
+                <div class="topping split otherHalf is-hidden" style="display: none;">
+                    <div class="flex-wrapper">
+                        <div class="LeftInactive portion c-toppingportion-C-Left">
+                            <input type="radio" aria-label="Cheese" name="Part|C--2" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion c-toppingportion-C-Whole">
+                            <input type="radio" aria-label="Cheese" name="Part|C--2" value="1/1">
+                        </div>
+                        <div class="RightInactive portion c-toppingportion-C-Right">
+                            <input type="radio" aria-label="Cheese" name="Part|C--2" value="2/2">
+                        </div> <select aria-label="Cheese Amount" class="weight" name="Weight|C--2"><option value="0">None</option><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product choose-sauce grid__cell--1 grid__cell--1/2@desktop grid__cell--1@widescreen" style="border: 0px;">
+        <h3 class="section-title">Choose a sauce</h3>
+        <div class="topping">
+            <label>
+                <input [(ngModel)]="_addSacue" type="checkbox" class="selectSauce" name="selectSauceToggle"> <span class="btn--toggle">Sauce</span>
+            </label>
+        </div>
+        <div *ngIf="_addSacue" class="toppingSettings sauceSelection">
+            <div class="topping sauce">
+                <label> <input type="radio" class="selectTopping c-topping-X" name="S_PIZZA|Topping|X"> <span class="btn--toggle">Robust Inspired Tomato Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: block;">
+                    <input type="hidden" name="Part|X" value="1/1">
+                    <select aria-label="Robust" inspired="" tomato="" sauce="" class="weight" name="Weight|X"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+            <div class="topping sauce">
+                <label> <input type="radio" class="selectTopping c-topping-Xm" name="S_PIZZA|Topping|Xm"> <span class="btn--toggle">Hearty Marinara Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;">
+                    <input type="hidden" name="Part|Xm" value="1/1">
+                    <select aria-label="Hearty" marinara="" sauce="" class="weight" name="Weight|Xm"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+            <div class="topping sauce">
+                <label> <input type="radio" class="selectTopping c-topping-Bq" name="S_PIZZA|Topping|Bq"> <span class="btn--toggle">BBQ Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;">
+                    <input type="hidden" name="Part|Bq" value="1/1">
+                    <select aria-label="BBQ" sauce="" class="weight" name="Weight|Bq"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

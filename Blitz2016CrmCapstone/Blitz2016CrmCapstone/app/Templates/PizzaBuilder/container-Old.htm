@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="default.css" rel="stylesheet" />
+</head>
+<body>
+<div class="pizza-builder-container">
+<div class="pizza-builder-header">
+    <div class="progress">
+        <div class="leftEndcap progress__step progress__step--static is-hidden@handheld">(</div>
+        <div class="step progress__step c-sizeCrust activeStep" id="sizeCrust">Size &amp; Crust</div>
+        <div class="seperator progress__step progress__step--static activeSeperator">/</div>
+        <div class="step progress__step c-cheeseSauce" id="cheeseSauce">Cheese &amp; Sauce</div>
+        <div class="seperator progress__step progress__step--static">/</div>
+        <div class="step progress__step c-toppings" id="toppings">Toppings</div>
+        <div class="rightEndcap progress__step progress__step--static is-hidden@handheld">)</div>
+    </div>
+</div>
+<div class="pizza-builder-content">
+<div class="pizza-builder-myorder">
+    <div id="pizzaSummaryInColumn" class="card card--pop card--builder-summary">
+        <div class="card__header">
+            <h2 class="card__title">
+                <span>My Pizza</span>
+            </h2>
+        </div>
+        <div class="card__body grid">
+            <p class="quantitySelect grid__cell--1@desktop grid__cell--1/3">
+                Quantity: <select aria-label="Quantity:" class="quantity" name="S_PIZZA|Quantity">
+                    <!-- -->
+                    <option selected="" value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select>
+            </p>
+            <div class="js-addToOrderVariantDetails grid__cell--1@desktop grid__cell--2/3">
+                <button class="btn btn--large js-isNew js-addToOrder btn--block c-order-addToOrder" type="submit" data-dpz-track-evt-pagename="Pizza Builder" style="">Add to Order</button>
+            </div>
+            <div class="js-nextVariantDetails is-hidden grid__cell--1@desktop grid__cell--2/3">
+                <a class="js-next btn btn--large btn--block" href="#" data-dpz-track-evt-pagename="Pizza Builder" style="display: none;">Next Step</a>
+            </div>
+        </div>
+    </div>
+</div>
+<img src="../../app/Images/BK_mask.png" alt="" class="pizza-builder-pizza" />
+<img src="../../app/Images/BK.png" alt="" class="pizza-builder-pizza" />
+<div class="pizza-builder-content-body card card--pop card--pizza-options">
+
+<div class="form__control-group--actions--steps is-hidden@widescreen" style="position: absolute; right: 5px; bottom: 0; width: 100%;">
+    <a class="js-prev btn btn--small btn--secondary btn--back c-order-back" href="#" data-dpz-track-evt-pagename="Pizza Builder" style="display: none;">
+        <span>Back</span></a> <a class="js-next btn btn--small btn--next c-order-nextStep" href="#" data-dpz-track-evt-pagename="Pizza Builder">Next Step</a>
+</div>
+
+
+<div id="sizeCrustWrapper" class="is-hidden grid js-sizeCrustWrapper" style="display: block;">
+    <div class="grid__cell--1">
+        <h2 class="step-title">Choose Size &amp; Crust</h2>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Hand Tossed</h3>
+        <p class="section-description">Garlic-seasoned crust with a rich, buttery taste.</p>
+        <div class="row"> <label> <input data-flavorcode="HANDTOSS" data-sizecode="10" name="S_PIZZA|Variant" type="radio" value="10SCREEN" class="c-crust-10SCREEN"> <span class="btn--toggle">Small (10")</span> </label>
+        </div>
+        <div class="row"> <label> <input data-flavorcode="HANDTOSS" data-sizecode="12" name="S_PIZZA|Variant" type="radio" value="12SCREEN" class="c-crust-12SCREEN"> <span class="btn--toggle">Medium (12")</span> </label>
+        </div>
+        <div class="row"> <label> <input data-flavorcode="HANDTOSS" data-sizecode="14" name="S_PIZZA|Variant" type="radio" value="14SCREEN" class="c-crust-14SCREEN"> <span class="btn--toggle">Large (14")</span> </label>
+        </div>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Handmade Pan</h3>
+        <p class="section-description">Two layers of cheese, toppings to the edge, baked in a pan for a crust that is golden and crispy with a buttery taste.</p>
+        <div class="row"> <label> <input data-flavorcode="NPAN" data-sizecode="12" name="S_PIZZA|Variant" type="radio" value="P12IPAZA" class="c-crust-P12IPAZA"> <span class="btn--toggle">Medium (12")</span> </label>
+        </div>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Crunchy Thin Crust</h3>
+        <p class="section-description">Thin enough for the optimum crispy to crunchy ratio.</p>
+        <div class="row"> <label> <input data-flavorcode="THIN" data-sizecode="10" name="S_PIZZA|Variant" type="radio" value="10THIN" class="c-crust-10THIN"> <span class="btn--toggle">Small (10")</span> </label>
+        </div>
+        <div class="row"> <label> <input data-flavorcode="THIN" data-sizecode="12" name="S_PIZZA|Variant" type="radio" value="12THIN" class="c-crust-12THIN"> <span class="btn--toggle">Medium (12")</span> </label>
+        </div>
+        <div class="row"> <label> <input data-flavorcode="THIN" data-sizecode="14" name="S_PIZZA|Variant" type="radio" value="14THIN" class="c-crust-14THIN"> <span class="btn--toggle">Large (14")</span> </label>
+        </div>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Brooklyn Style</h3>
+        <p class="section-description">Hand stretched to be big, thin and perfectly foldable.</p>
+        <div class="row"> <label> <input data-flavorcode="BK" data-sizecode="14" name="S_PIZZA|Variant" type="radio" value="PBKIREZA" class="c-crust-PBKIREZA"> <span class="btn--toggle">Large (14")</span> </label>
+        </div>
+        <div class="row"> <label> <input data-flavorcode="BK" data-sizecode="16" name="S_PIZZA|Variant" type="radio" value="P16IBKZA" class="c-crust-P16IBKZA"> <span class="btn--toggle">X-Large (16")</span> </label>
+        </div>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen" style="border: 0px; clear: left; min-height: 0px;">
+        <h3 class="section-title">Gluten Free Crust</h3>
+        <p class="section-description">Domino's pizza made with a Gluten Free Crust.</p>
+        <div class="row"> <label> <input data-flavorcode="GLUTENF" data-sizecode="10" name="S_PIZZA|Variant" type="radio" value="P10IGFZA" class="c-crust-P10IGFZA"> <span class="btn--toggle">Small (10")</span> </label>
+        </div>
+    </div>
+</div>
+<div id="cheeseSauceWrapper" class="is-hidden grid" style="display: none;">
+    <div class="grid__cell--1">
+        <h2 class="step-title">Choose Cheese &amp; Sauce</h2>
+        <div class="noCheeseAndSauce builder__block-message is-hidden">
+            <h2>Sorry, this specialty pizza does not have configurable cheese or sauce.</h2>
+        </div>
+    </div>
+    <div class="product choose-cheese grid__cell--1 grid__cell--1/4@desktop">
+        <h3 class="section-title">Cheese?</h3>
+        <div class="topping cheese"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-C" name="S_PIZZA|Topping|C|SPLIT"> <span class="btn--toggle">Cheese</span> </label>
+            <div class="toppingSettings is-hidden" style="display: block;">
+                <div class="topping split">
+                    <div class="LeftInactive portion c-toppingportion-C-Left"><input type="radio" aria-label="Cheese" name="Part|C--1" value="1/2">
+                    </div>
+                    <div class="WholeActive portion c-toppingportion-C-Whole"><input type="radio" aria-label="Cheese" name="Part|C--1" value="1/1">
+                    </div>
+                    <div class="RightInactive portion c-toppingportion-C-Right"><input type="radio" aria-label="Cheese" name="Part|C--1" value="2/2">
+                    </div> <select aria-label="Cheese Amount" class="weight" name="Weight|C--1"><option value="0" style="display: none;">None</option><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                </div>
+                <div class="topping split otherHalf is-hidden" style="display: none;">
+                    <div class="flex-wrapper">
+                        <div class="LeftInactive portion c-toppingportion-C-Left"><input type="radio" aria-label="Cheese" name="Part|C--2" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion c-toppingportion-C-Whole"><input type="radio" aria-label="Cheese" name="Part|C--2" value="1/1">
+                        </div>
+                        <div class="RightInactive portion c-toppingportion-C-Right"><input type="radio" aria-label="Cheese" name="Part|C--2" value="2/2">
+                        </div> <select aria-label="Cheese Amount" class="weight" name="Weight|C--2"><option value="0">None</option><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product choose-sauce grid__cell--1 grid__cell--1/2@desktop grid__cell--1@widescreen" style="border: 0px;">
+        <h3 class="section-title">Choose a sauce</h3>
+        <div class="topping"> <label> <input type="checkbox" class="selectSauce" name="selectSauceToggle"> <span class="btn--toggle">Sauce</span> </label>
+        </div>
+        <div class="toppingSettings sauceSelection">
+            <div class="topping sauce"> <label> <input type="radio" class="selectTopping c-topping-X" name="S_PIZZA|Topping|X"> <span class="btn--toggle">Robust Inspired Tomato Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: block;"> <input type="hidden" name="Part|X" value="1/1"><select aria-label="Robust" inspired="" tomato="" sauce="" class="weight" name="Weight|X"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+            <div class="topping sauce"> <label> <input type="radio" class="selectTopping c-topping-Xm" name="S_PIZZA|Topping|Xm"> <span class="btn--toggle">Hearty Marinara Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;"> <input type="hidden" name="Part|Xm" value="1/1"><select aria-label="Hearty" marinara="" sauce="" class="weight" name="Weight|Xm"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+            <div class="topping sauce"> <label> <input type="radio" class="selectTopping c-topping-Bq" name="S_PIZZA|Topping|Bq"> <span class="btn--toggle">BBQ Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;"> <input type="hidden" name="Part|Bq" value="1/1"><select aria-label="BBQ" sauce="" class="weight" name="Weight|Bq"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                </div>
+            </div>
+            <div class="topping sauce"> <label> <input type="radio" class="selectTopping c-topping-Xw" name="S_PIZZA|Topping|Xw"> <span class="btn--toggle">Garlic Parmesan White Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;"> <input type="hidden" name="Part|Xw" value="1/1"><select aria-label="Garlic" parmesan="" white="" sauce="" class="weight" name="Weight|Xw"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+            <div class="topping sauce"> <label> <input type="radio" class="selectTopping c-topping-Xf" name="S_PIZZA|Topping|Xf"> <span class="btn--toggle">Alfredo Sauce</span> </label>
+                <div class="toppingSettings is-hidden" style="display: none;"> <input type="hidden" name="Part|Xf" value="1/1"><select aria-label="Alfredo" sauce="" class="weight" name="Weight|Xf"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option></select>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="toppingsWrapper" class="is-hidden grid toppings-list" style="display: none;">
+<div class="grid__cell--1">
+    <h2 class="step-title">Choose Toppings</h2>
+</div>
+<div class="product grid__cell--1/2@desktop grid__cell--1">
+    <h3 class="section-title">Choose Meats</h3>
+    <div class="grid">
+        <div class="toppingColumn grid__cell--1/2@desktop grid__cell--1">
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-P topping-P" name="S_PIZZA|Topping|P"> <span class="btn--toggle">Pepperoni</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Pepperoni" type="radio" name="Part|P" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Pepperoni" type="radio" name="Part|P" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Pepperoni" type="radio" name="Part|P" value="2/2">
+                        </div> <select aria-label="Pepperoni" class="weight" name="Weight|P"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Sb topping-Sb" name="S_PIZZA|Topping|Sb"> <span class="btn--toggle">Sliced Italian Sausage</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Sliced" italian="" sausage="" type="radio" name="Part|Sb" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Sliced" italian="" sausage="" type="radio" name="Part|Sb" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Sliced" italian="" sausage="" type="radio" name="Part|Sb" value="2/2">
+                        </div> <select aria-label="Sliced" italian="" sausage="" class="weight" name="Weight|Sb"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Pm topping-Pm" name="S_PIZZA|Topping|Pm"> <span class="btn--toggle">Philly Steak</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Philly" steak="" type="radio" name="Part|Pm" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Philly" steak="" type="radio" name="Part|Pm" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Philly" steak="" type="radio" name="Part|Pm" value="2/2">
+                        </div> <select aria-label="Philly" steak="" class="weight" name="Weight|Pm"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-K topping-K" name="S_PIZZA|Topping|K"> <span class="btn--toggle">Bacon</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Bacon" type="radio" name="Part|K" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Bacon" type="radio" name="Part|K" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Bacon" type="radio" name="Part|K" value="2/2">
+                        </div> <select aria-label="Bacon" class="weight" name="Weight|K"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Du topping-Du" name="S_PIZZA|Topping|Du"> <span class="btn--toggle">Premium Chicken</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Premium" chicken="" type="radio" name="Part|Du" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Premium" chicken="" type="radio" name="Part|Du" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Premium" chicken="" type="radio" name="Part|Du" value="2/2">
+                        </div> <select aria-label="Premium" chicken="" class="weight" name="Weight|Du"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toppingColumn grid__cell--1/2@desktop grid__cell--1">
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-S topping-S" name="S_PIZZA|Topping|S"> <span class="btn--toggle">Italian Sausage</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Italian" sausage="" type="radio" name="Part|S" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Italian" sausage="" type="radio" name="Part|S" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Italian" sausage="" type="radio" name="Part|S" value="2/2">
+                        </div> <select aria-label="Italian" sausage="" class="weight" name="Weight|S"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-B topping-B" name="S_PIZZA|Topping|B"> <span class="btn--toggle">Beef</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Beef" type="radio" name="Part|B" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Beef" type="radio" name="Part|B" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Beef" type="radio" name="Part|B" value="2/2">
+                        </div> <select aria-label="Beef" class="weight" name="Weight|B"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-H topping-H" name="S_PIZZA|Topping|H"> <span class="btn--toggle">Ham</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Ham" type="radio" name="Part|H" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Ham" type="radio" name="Part|H" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Ham" type="radio" name="Part|H" value="2/2">
+                        </div> <select aria-label="Ham" class="weight" name="Weight|H"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Sa topping-Sa" name="S_PIZZA|Topping|Sa"> <span class="btn--toggle">Salami</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Salami" type="radio" name="Part|Sa" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Salami" type="radio" name="Part|Sa" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Salami" type="radio" name="Part|Sa" value="2/2">
+                        </div> <select aria-label="Salami" class="weight" name="Weight|Sa"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="product grid__cell--1/2@desktop grid__cell--1" style="border: 0px;">
+    <h3 class="section-title">Choose Non-meats</h3>
+    <div class="grid">
+        <div class="toppingColumn grid__cell--1/2@desktop grid__cell--1">
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-E topping-E" name="S_PIZZA|Topping|E"> <span class="btn--toggle">Cheddar Cheese</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Cheddar" cheese="" type="radio" name="Part|E" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Cheddar" cheese="" type="radio" name="Part|E" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Cheddar" cheese="" type="radio" name="Part|E" value="2/2">
+                        </div> <select aria-label="Cheddar" cheese="" class="weight" name="Weight|E"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Cs topping-Cs" name="S_PIZZA|Topping|Cs"> <span class="btn--toggle">Shredded Parmesan Asiago</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Shredded" parmesan="" asiago="" type="radio" name="Part|Cs" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Shredded" parmesan="" asiago="" type="radio" name="Part|Cs" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Shredded" parmesan="" asiago="" type="radio" name="Part|Cs" value="2/2">
+                        </div> <select aria-label="Shredded" parmesan="" asiago="" class="weight" name="Weight|Cs"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Z topping-Z" name="S_PIZZA|Topping|Z"> <span class="btn--toggle">Banana Peppers</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Banana" peppers="" type="radio" name="Part|Z" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Banana" peppers="" type="radio" name="Part|Z" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Banana" peppers="" type="radio" name="Part|Z" value="2/2">
+                        </div> <select aria-label="Banana" peppers="" class="weight" name="Weight|Z"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-V topping-V" name="S_PIZZA|Topping|V"> <span class="btn--toggle">Green Olives</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Green" olives="" type="radio" name="Part|V" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Green" olives="" type="radio" name="Part|V" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Green" olives="" type="radio" name="Part|V" value="2/2">
+                        </div> <select aria-label="Green" olives="" class="weight" name="Weight|V"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-J topping-J" name="S_PIZZA|Topping|J"> <span class="btn--toggle">Jalapeno Peppers</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Jalapeno" peppers="" type="radio" name="Part|J" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Jalapeno" peppers="" type="radio" name="Part|J" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Jalapeno" peppers="" type="radio" name="Part|J" value="2/2">
+                        </div> <select aria-label="Jalapeno" peppers="" class="weight" name="Weight|J"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-N topping-N" name="S_PIZZA|Topping|N"> <span class="btn--toggle">Pineapple</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Pineapple" type="radio" name="Part|N" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Pineapple" type="radio" name="Part|N" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Pineapple" type="radio" name="Part|N" value="2/2">
+                        </div> <select aria-label="Pineapple" class="weight" name="Weight|N"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Rr topping-Rr" name="S_PIZZA|Topping|Rr"> <span class="btn--toggle">Roasted Red Peppers</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Roasted" red="" peppers="" type="radio" name="Part|Rr" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Roasted" red="" peppers="" type="radio" name="Part|Rr" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Roasted" red="" peppers="" type="radio" name="Part|Rr" value="2/2">
+                        </div> <select aria-label="Roasted" red="" peppers="" class="weight" name="Weight|Rr"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Td topping-Td" name="S_PIZZA|Topping|Td"> <span class="btn--toggle">Diced Tomatoes</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Diced" tomatoes="" type="radio" name="Part|Td" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Diced" tomatoes="" type="radio" name="Part|Td" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Diced" tomatoes="" type="radio" name="Part|Td" value="2/2">
+                        </div> <select aria-label="Diced" tomatoes="" class="weight" name="Weight|Td"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toppingColumn grid__cell--1/2@desktop grid__cell--1">
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Fe topping-Fe" name="S_PIZZA|Topping|Fe"> <span class="btn--toggle">Feta Cheese</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Feta" cheese="" type="radio" name="Part|Fe" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Feta" cheese="" type="radio" name="Part|Fe" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Feta" cheese="" type="radio" name="Part|Fe" value="2/2">
+                        </div> <select aria-label="Feta" cheese="" class="weight" name="Weight|Fe"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Cp topping-Cp" name="S_PIZZA|Topping|Cp"> <span class="btn--toggle">Shredded Provolone Cheese</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Shredded" provolone="" cheese="" type="radio" name="Part|Cp" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Shredded" provolone="" cheese="" type="radio" name="Part|Cp" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Shredded" provolone="" cheese="" type="radio" name="Part|Cp" value="2/2">
+                        </div> <select aria-label="Shredded" provolone="" cheese="" class="weight" name="Weight|Cp"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-R topping-R" name="S_PIZZA|Topping|R"> <span class="btn--toggle">Black Olives</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Black" olives="" type="radio" name="Part|R" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Black" olives="" type="radio" name="Part|R" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Black" olives="" type="radio" name="Part|R" value="2/2">
+                        </div> <select aria-label="Black" olives="" class="weight" name="Weight|R"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-G topping-G" name="S_PIZZA|Topping|G"> <span class="btn--toggle">Green Peppers</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Green" peppers="" type="radio" name="Part|G" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Green" peppers="" type="radio" name="Part|G" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Green" peppers="" type="radio" name="Part|G" value="2/2">
+                        </div> <select aria-label="Green" peppers="" class="weight" name="Weight|G"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-M topping-M" name="S_PIZZA|Topping|M"> <span class="btn--toggle">Mushrooms</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Mushrooms" type="radio" name="Part|M" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Mushrooms" type="radio" name="Part|M" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Mushrooms" type="radio" name="Part|M" value="2/2">
+                        </div> <select aria-label="Mushrooms" class="weight" name="Weight|M"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-O topping-O" name="S_PIZZA|Topping|O"> <span class="btn--toggle">Onions</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Onions" type="radio" name="Part|O" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Onions" type="radio" name="Part|O" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Onions" type="radio" name="Part|O" value="2/2">
+                        </div> <select aria-label="Onions" class="weight" name="Weight|O"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Si topping-Si" name="S_PIZZA|Topping|Si"> <span class="btn--toggle">Spinach</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Spinach" type="radio" name="Part|Si" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Spinach" type="radio" name="Part|Si" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Spinach" type="radio" name="Part|Si" value="2/2">
+                        </div> <select aria-label="Spinach" class="weight" name="Weight|Si"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+            <div class="topping"> <label class="form__control-group--toggle"> <input type="checkbox" class="selectTopping c-topping-Ht topping-Ht" name="S_PIZZA|Topping|Ht"> <span class="btn--toggle">Hot Sauce</span> </label>
+                <div class="toppingSettings is-hidden">
+                    <div class="topping">
+                        <div class="LeftInactive portion"><input aria-label="Hot" sauce="" type="radio" name="Part|Ht" value="1/2">
+                        </div>
+                        <div class="WholeInactive portion"><input aria-label="Hot" sauce="" type="radio" name="Part|Ht" value="1/1">
+                        </div>
+                        <div class="RightInactive portion"><input aria-label="Hot" sauce="" type="radio" name="Part|Ht" value="2/2">
+                        </div> <select aria-label="Hot" sauce="" class="weight" name="Weight|Ht"><option value="0.5">Light</option><option selected="" value="1">Normal</option><option value="1.5">Extra</option><option value="2">Double</option></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="pizza-builder-footer">
+    <span>The Pizza Builder will always show a large pizza. If you choose a different size, the topping amounts will vary. The deliciousness, however, will not.</span>
+</div>
+</div>
+</body>
+</html>

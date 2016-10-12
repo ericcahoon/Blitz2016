@@ -1,0 +1,15 @@
+﻿<div class="pizza-builder-container">
+    <div class="pizza-builder-header">
+        <pizza-builder-progress [CurrentStep]="_activeStep"></pizza-builder-progress>
+    </div>
+    <div class="pizza-builder-content">
+<img src="../../app/Images/BK_mask.png" alt="" class="pizza-builder-pizza" />
+<img src="../../app/Images/BK.png" alt="" class="pizza-builder-pizza" />        
+        <pizza-builder-myorder *ngIf="_pizzas.length>0" [Pizzas]="_pizzas"></pizza-builder-myorder>
+        <div style="position: absolute" class="pizza-builder-content-body card card--pop card--pizza-options">
+            <select-crust (stepChange)="adjustActiveStep($event);" [hidden]="_activeStep !== 0"></select-crust>
+            <select-cheese-and-sauce (stepChange)="adjustActiveStep($event);" [hidden]="_activeStep !== 1"></select-cheese-and-sauce>
+            <select-toppings (stepChange)="adjustActiveStep($event);" [hidden]="_activeStep !== 2"></select-toppings>
+        </div>
+    </div>
+</div>

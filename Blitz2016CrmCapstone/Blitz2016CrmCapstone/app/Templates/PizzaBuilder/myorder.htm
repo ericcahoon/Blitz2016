@@ -1,0 +1,22 @@
+﻿<div class="pizza-builder-myorder">
+    <place-order-dialog *ngIf="!!_showPlaceOrderDialog" [Pizzas]="_pizzas" (onCloseDialogClicked)="hidePlaceOrderDialog()"></place-order-dialog>
+    <div id="pizzaSummaryInColumn" class="card card--pop card--builder-summary">
+        <div class="card__header">
+            <h2 class="card__title">
+                <span>My Pizza&#40;s&#41;</span>
+            </h2>
+            <div *ngIf="_pizzas.length > 0" style="padding: 5px 10px 0 10px;">
+                <div style="height: 50px; overflow-y: auto;">
+                    <div *ngFor="let p of _pizzas; let i = index">
+                        <span>{{i+1}}&#46;&#41; {{p.Name}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__body grid">
+            <div class="js-addToOrderVariantDetails grid__cell--1@desktop grid__cell--2/3">
+                <button (click)="placeOrder()" class="btn btn--large js-isNew js-addToOrder btn--block c-order-addToOrder" type="submit" data-dpz-track-evt-pagename="Pizza Builder" style="">Place Order</button>
+            </div>
+        </div>
+    </div>
+</div>

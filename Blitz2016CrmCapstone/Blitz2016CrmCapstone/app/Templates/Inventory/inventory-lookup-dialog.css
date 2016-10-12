@@ -1,0 +1,524 @@
+    #InventoryLookupContainer {
+        height: 500px;
+        width: 1000px;
+        top: 10px;
+        border: solid 1px #e2e3ea;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ng-valid[required] { border-left: solid 5px #42A948; }
+    .ng-invalid {  border-left: solid 5px #a94442; }
+
+ .dialog-background {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #fff;
+            z-index: 99998;
+            opacity: .6;
+        }
+
+        .dialog-container {
+            width: 250px;
+            position: absolute;
+            background-color: #fff;
+            border: 2px solid #e2e3ea;
+            overflow: hidden;
+            position: fixed;
+            left: calc(50% - 125px);
+            top: calc(50% - 100px);
+            z-index: 99999;
+            padding: 5px;
+        }
+
+        .dialog {
+            min-height: 155px;
+        }
+
+        .dialog-controls { margin-top: 5px;  text-align: right; }
+
+        /*.dialog-controls button { margin-left: 5px; }
+
+        .dialog button { float: right; }*/
+
+        .dialog p {
+            text-align: center;
+        }
+        .dialog header {
+            color: #fff;
+            background-color: #002050;
+            font-weight: bold;
+            padding: 5px;
+            display: flex;
+        }
+        .dialog header .title {
+            flex-grow: 1;
+            cursor: default;
+        }
+        .dialog header .exit-button {
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+    span.MakeModelYear, span.Mileage, span.StockNo, span.VIN, td.Price {
+        text-align: center;
+    }
+
+    .InventoryLookupSectionHeader {
+        background: #002050;
+        color: #fff;
+        font-size: 150%;
+        font-weight: bold;
+        height: 45px;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .Comments {
+        color: #444444;
+        font-size: 11px;
+    }
+
+    .InventoryLookupControls {
+        bottom: 15px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+
+    .InventoryLookupSearchResultMessage {
+        color: #666;
+        font-size: 16px;
+        position: relative;
+        text-align: center;
+        top: 40%;
+    }
+
+    .text-overflow-ellipsis {
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 85px;
+    }
+
+    div.VehicleDetail .text-overflow-ellipsis {
+        width: 115px;
+    }
+
+    .InventoryLookupModelGrouping {
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+        .InventoryLookupModelGrouping div {
+            padding-left: 5px;
+            position: relative;
+        }
+
+    .InventoryLookupModelGroupingLabel {
+        -moz-text-overflow: ellipsis;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        display: inline-block;
+        overflow: hidden;
+        width: 100px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+    .InventoryLookupModelGroupingList {
+        margin-top: 3px;
+    }
+
+    div.VehicleListRecord {
+        border-bottom: solid 1px #666666;
+        clear: both;
+        height: 110px;
+        padding: 5px 0;
+        position: relative;
+    }
+
+    div.VehicleDetail {
+        background: white;
+        border: solid 3px #e2e3ea;
+        bottom: 20px;
+        left: 0;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+    }
+
+        div.VehicleDetail div {
+            padding-bottom: 5px;
+        }
+
+    div.VehicleDetails {
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
+    }
+
+    div.MakeModelYear,
+    div.MakeModelYearDetails {
+        font-size: 18px;
+        font-weight: bold;
+        height: 25px;
+        left: 130px;
+        position: absolute;
+        right: 0;
+        text-align: left;
+        white-space: nowrap;
+        width: 100%;
+    }
+
+    div.MakeModelYearDetails {
+        font-size: 24pt;
+        height: 40px;
+        left: 0;
+        position: relative;
+    }
+
+    div.VehicleInfo,
+    div.VehicleInfoDetails {
+        left: 130px;
+        position: relative;
+        right: 0;
+        text-align: left;
+        top: 25px;
+    }
+
+    div.VehicleInfoDetails {
+        left: 0;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    div.VehicleInfo .Label, div.VehicleDetail .Label {
+        font-weight: bold;
+    }
+
+    div.SelectedVois a,
+    div.VehicleDetail a,
+    div.VehicleInfo a {
+        color: blue;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    div.VehicleDetail ul {
+        display: block;
+        list-style: disc;
+        list-style-position: inside;
+        width: 520px;
+    }
+
+    div.VehicleDetail li {
+        float: left;
+        margin-right: 10px;
+        padding-bottom: 5px;
+        white-space: nowrap;
+        width: 30%;
+    }
+
+    div.VehicleInternalNotesList li {
+        width: 100%;
+        max-height: 100px;
+    }
+
+    .VehicleImages {
+        left: 10px;
+        position: absolute;
+        width: 400px;
+    }
+
+    .VehicleImageBig {
+        border: solid 1px #e2e3ea;
+        height: 400px;
+        margin-bottom: 3px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+        .VehicleImageBig img {
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+    .VehicleThumbnails {
+        height: 100px;
+        overflow-y: auto;
+    }
+
+    .VehicleOptions {
+        height: 260px;
+        left: 420px;
+        position: absolute;
+        right: 0;
+    }
+
+        .VehicleOptions li {
+            float: left;
+        }
+
+    .VehicleInternalNotesContainer {
+        margin-right: 5px;
+        max-height: 100px;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .VehicleInfo .ms-crm-Field-Data-Print {
+        cursor: text;
+    }
+
+    .VehicleOptionsContainer {
+        height: 110px;
+        position: relative;
+    }
+
+        .VehicleOptionsContainer li {
+            -moz-text-overflow: ellipsis;
+            -ms-VehicleInternalNotesListtext-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .VehicleOptionsList {
+        bottom: 0;
+        left: 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
+
+    div.SelectVehicle {
+        height: 100px;
+        position: absolute;
+        text-align: center;
+    }
+
+    div.VehicleImage {
+        left: 30px;
+        position: absolute;
+        text-align: center;
+        width: 100px;
+    }
+
+    img.Image {
+        border: 2px solid #666;
+    }
+
+    span.Mileage {
+        color: #666;
+        font-size: 12px;
+    }
+
+
+
+    #InventoryLookup {
+        height: 100%;
+    }
+
+    #InventoryLookupContentContainer {
+        float: left;
+        height: 100%;
+        width: 100%;
+    }
+
+    #InventoryLookupNotification {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+
+    #InventoryLookupWantVehicleDialog {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    #InventoryLookupWantListDialog {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
+    
+    #InventoryLookupList {
+        background-color: #fff;
+        border: solid 2px #e2e3ea;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #ContentContainer {
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 !important;
+    }
+
+    #InventoryLookupCriteria {
+        bottom: 50px;
+        float: left;
+        margin-right: 10px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-bottom: 10px;
+        position: absolute;
+        text-align: left;
+        top: 0;
+        width: 200px;
+    }
+
+    #InventoryLookupCriteriaParameters {
+        bottom: 0;
+        overflow-y: auto;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    #InventoryLookupCriteria .ms-crm-Inline-Edit, .ms-crm-Inline-Value {
+        margin: 0;
+    }
+
+    #InventoryLookupCriteria .Label {
+        cursor: text;
+        font-weight: bold;
+        margin: 3px 0;
+    }
+
+    #InventoryLookupCriteriaControls {
+        bottom: 20px;
+        position: absolute;
+        text-align: right;
+        width: 200px;
+        z-index: 999;
+    }
+
+    #InventoryLookupData {
+        bottom: 0;
+        left: 20px;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+
+    #InventoryLookupRecordCount {
+        color: #666;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #InventorySearchResults {
+        bottom: 53px;
+        left: 210px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #InventoryLookupContainer td {
+        padding-bottom: 3px;
+        vertical-align: top;
+    }
+
+    #InventoryLookupNotificationControls {
+        bottom: 0;
+        height: 30px;
+        left: 0;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+
+     #InventoryLookupWantVehicleControls {
+        bottom: 0;
+        height: 30px;
+        left: 0;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+
+      #InventoryLookupWantListControls {
+        bottom: 0;
+        height: 30px;
+        left: 0;
+        padding: 0 10px;
+        position: absolute;
+        right: 0;
+        text-align: right;
+    }
+
+    .backgroundUpdate {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: #FFFF00;
+        color: black;
+        font-size: 0.6em;
+    }
+
+    .blinkify {
+        -moz-animation: blinker 1s linear infinite;
+        -o-animation: blinker 1s linear infinite;
+        -webkit-animation: blinker 1s linear infinite;
+        animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            opacity: 0.0;
+        }
+    }
+
+    .overlayStatus {
+        position: absolute;
+        /*top: 200px;*/
+        left: 0;
+        width: 100%;
+    }
+
+    .overlayStatusText {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 2px;
+    }
+
+    .overlayStatusColor {
+        background-color: #FFFF00;
+    }
+
+    .showHalfYearModel {
+        margin-left: 210px;
+        float: left;
+        display: inline-block;
+        vertical-align: middle;
+    }

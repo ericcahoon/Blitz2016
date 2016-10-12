@@ -1,0 +1,12 @@
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.dll.config
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.dll
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.pdb
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.dll
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.pdb
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.csprojResolveAssemblyReference.cache
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.dll.config
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.dll
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\bin\Blitz2016CrmCapstone.pdb
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.csprojResolveAssemblyReference.cache
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.dll
+C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\obj\Debug\Blitz2016CrmCapstone.pdb

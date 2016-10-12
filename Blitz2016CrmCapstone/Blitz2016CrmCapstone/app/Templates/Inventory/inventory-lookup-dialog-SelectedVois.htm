@@ -1,0 +1,35 @@
+﻿<div id="InventoryLookupSelectedVois" class="SelectedVois">
+    <fieldset style="border: solid 2px #e2e3ea; height: 140px; padding: 0 5px 0 5px;">
+        <legend style="font-weight: bold">Vehicles of Interest Selected&#58;</legend>
+        <div *ngFor="let vehicle of selectedVehicles; let i = index" ngif="SelectedVehicles.length > 0">
+            <div data-bind="attr: { title: $root.SelectedVehicles().length <= 1 ? '' : 'Drag and drop to move selected vehicles of interest' }, css: { 'no-sort': $root.SelectedVehicles().length <= 1 ? true : false }" style="float: left; width: 235px;">
+                <div style="float: left; margin-right: 5px; width: 100px; height: 82px; line-height: 82px;">                    
+                    <img *ngIf="!vehicle.ImagePrimary" class="VehicleImage" src="/app/images/InventoryLookup.Missing.png" alt="" style="max-height: 75px; max-width: 100px; vertical-align: middle;">
+                    <img *ngIf="!!vehicle.ImagePrimary" class="VehicleImage" [src]="vehicle.ImagePrimary" alt="" style="max-height: 75px; max-width: 100px; vertical-align: middle;">
+                </div>
+                <div>
+                    <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" style="width: 125px;"><strong>VOI &#35;{{i + 1}}&#58;</strong></div>
+                    <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" style="width: 125px;">
+                        Stock &#35;{{vehicle.StockNumber}}
+                    </div>
+                    <div *ngIf="!!vehicle.Condition" class="text-overflow-ellipsis ms-crm-Field-Data-Print" style="width: 125px;">{{vehicle.Condition.Label}}</div>
+                    <div>
+                        <a (click)="ShowVehicleDetails(vehicle)"></a>
+                    </div>
+                    <div>
+                        <a (click)="RemoveVehicle(vehicle)">Remove VOI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let slot of availableVoiSlots; let i = index">
+            <div style="float: right; border: solid 1px black; background-color: #e2e3ea; width: 33%; height: 80px; line-height: 80px; text-align: center;">
+                <span style="display: inline-block; line-height: normal; vertical-align: middle">
+                    <strong class="text-overflow-ellipsis ms-crm-Field-Data-Print">VOI &#35; {{3-i}}&#58;</strong>
+                    <br />
+                    None Selected
+                </span>
+            </div>
+        </div>
+    </fieldset>
+</div>

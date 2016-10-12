@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Crowe's Pizza Joint</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="app/Templates/PizzaBuilder/default.css" rel="stylesheet" />
+</head>
+<body>
+<!-- ReSharper disable Html.TagNotResolved -->
+<my-app>
+    <img src="app/Images/progress.gif" alt="" />
+</my-app>
+<!-- ReSharper restore Html.TagNotResolved -->
+
+<!-- 1. Load libraries -->
+<!-- Polyfill(s) for older browsers -->
+<script src="app/adal.js"></script>
+<!-- ReSharper disable Html.PathError -->
+<script src="node_modules/core-js/client/shim.min.js"></script>
+<script src="node_modules/zone.js/dist/zone.js"></script>
+<script src="node_modules/reflect-metadata/Reflect.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<!-- ReSharper restore Html.PathError -->
+
+<!-- 2. Configure SystemJS -->
+<script src="systemjs.config.js"></script>
+<script>
+
+    var crmConfig = {
+        Tenant: "blitz2016.onmicrosoft.com",
+        ClientId: "47483552-1cf0-48a6-bf8a-807d270aaa41", // clientId - from Azure
+        AdfsRedirectUri: window.location.origin + "/",
+        PostLogoutRedirectUri: window.location.origin + "/",
+        OrganizationUri: "https://blitz2016.crm.dynamics.com", // Dynamics CRM oganization 
+        AuthType: 1 //0 == on-prem, 1 == CRM online
+    };
+
+    System.import("app")
+        .then(module => module.main(crmConfig),
+            console.error.bind(console)
+        )
+        .catch(function (err) {
+            console.error(err);
+        });
+</script>
+</body>
+</html>

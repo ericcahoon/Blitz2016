@@ -1,0 +1,25 @@
+﻿<link href="inventory-lookup-dialog.css" rel="stylesheet" />
+<div id="InventoryLookupContainer">
+    <div inventory-lookup-submit-inquiry-form-Anchor></div>
+    <div id="InventoryLookup">
+        <div id="InventoryLookupHeader" class="InventoryLookupSectionHeader" style="position: relative">
+            <div>
+                Inventory Lookup
+            </div>
+        </div>
+        <div id="InventoryLookupData">
+            <div id="InventoryLookupContentContainer">
+                <inventory-searchfilters [TotalNumberRecords]="TotalNumberRecords"></inventory-searchfilters>
+            </div>
+            <div id="InventorySearchResults">
+                <inventory-selectedvois></inventory-selectedvois>
+                <inventory-listvehicles [Vehicles]="InventoryVehicles" [IsSearching]="_isSearching"></inventory-listvehicles>
+            </div>
+            <inventory-vehicledetail *ngIf="VehicleDetailsVehicle != null"></inventory-vehicledetail>
+            <div class="InventoryLookupControls">
+                <button (click)="sumbitInquiryForm()" [disabled]="isSearching" style="width: 130px">Submit Inquiry</button>
+                <button (click)="Search()" [disabled]="isSearching">Search</button>
+            </div>
+        </div>
+    </div>
+</div>

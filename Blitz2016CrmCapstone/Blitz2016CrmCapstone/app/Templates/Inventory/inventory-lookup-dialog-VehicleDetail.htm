@@ -1,0 +1,137 @@
+﻿<div class="VehicleDetail" data-bind="with: VehicleDetailsVehicle, visible: (!VehicleDetailsVehicle() || !VehicleDetailsVehicle().IsVehicleDetailVisible() ? false : true)">
+    <div class="VehicleImages">
+        <div class="VehicleImageBig">
+            <img data-bind="attr: { src: (!ImageBig() || !ImageBig().Path ? window.top.Xrm.Page.context.prependOrgName('/WebResources/dmx_/images/DMx.Xrm.Vehicle.Lookup.Missing.png') : ImageBig().Path) }" alt="" style="max-height: 400px; max-width: 400px;" />
+        </div>
+        <div class="VehicleThumbnails" data-bind="foreach: DisplayImages()">
+            <img data-bind="click: $root.ChangeBigImage.bind($parent), attr: { src: Path }" alt="" style="max-height: 50px; max-width: 50px; cursor: pointer" />
+        </div>
+    </div>
+    <div class="VehicleOptions">
+        <div>
+            <div class="MakeModelYearDetails">
+                <span data-bind="text: Name(), attr: { title: Name() }"></span>
+            </div>
+            <div class="VehicleInfoDetails">
+                <!-- ReSharper disable Html.Obsolete -->
+                <table cellpadding="1" cellspacing="1" style="table-layout: fixed; width: 610px;">
+                    <colgroup>
+                        <col width="60">
+                        <col width="120">
+                        <col width="60">
+                        <col width="140">
+                        <col width="60">
+                        <col width="*">
+                    </colgroup>
+                    <!-- ReSharper restore Html.Obsolete -->
+                    <tbody>
+                        <tr>
+                            <td class="Label ms-crm-Field-Label-Print">Price&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Price(), attr: { title: Price() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Trim&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Trim(), attr: { title: Trim() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Stock &#35;&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: StockNumber(), attr: { title: StockNumber() }"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Label ms-crm-Field-Label-Print">Location&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Location(), attr: { title: Location() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Trans&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: !Transmission() ? 'Not provided' : Transmission(), attr: { title: !Transmission() ? '' : Transmission() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Type&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: (!Condition() ? '' : Condition().Label), attr: { title: (!Condition() ? '' : Condition().Label) }"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Label ms-crm-Field-Label-Print">Body&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: BodyStyle(), attr: { title: BodyStyle() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Drivetrain&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: DriveType() ? DriveType() : 'Not provided', attr: { title: DriveType() ? DriveType() : '' }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Ext. Color&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Exterior(), attr: { title: Exterior() }"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Label ms-crm-Field-Label-Print">Miles&#58;</td>
+                            <td class="Detail">
+                                <div class="Mileage ms-crm-Field-Data-Print" data-bind="text: Odometer() + '&nbsp;' + (!OdometerUnit() ? 'Miles' : OdometerUnit())"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">VIN&#58;</td>
+                            <td class="Detail">
+                                <div class="ms-crm-Field-Data-Print" data-bind="text: VIN(), attr: { title: VIN() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Int. Color&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Interior(), attr: { title: Interior() }"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Label ms-crm-Field-Label-Print">Engine&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Engine(), attr: { title: Engine() }"></div>
+                            </td>
+                            <td class="Label ms-crm-Field-Label-Print">Style&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: Style(), attr: { title: Style() }"></div>
+                            </td>
+                            <!--<td class="Label ms-crm-Field-Label-Print">Inv. Days&#58;</td>
+                            <td class="Detail">
+                                <div class="text-overflow-ellipsis ms-crm-Field-Data-Print" data-bind="text: NumDaysListed(), attr: { title: NumDaysListed() }"></div>
+                            </td>-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="Label ms-crm-Field-Label-Print">Internal Notes&#58;</div>
+        <div class="VehicleInternalNotesContainer">
+            <div class="VehicleInternalNotesList ms-crm-Field-Data-Print">
+                <span data-bind="visible: (!InternalNotes || !InternalNotes() || InternalNotes().length < 1 ? true : false)">No Notes Provided</span>
+                <ul data-bind="visible: (!InternalNotes || !InternalNotes() || InternalNotes().length < 1 ? false : true), foreach: InternalNotes">
+                    <li data-bind="text: NoteText"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="Label ms-crm-Field-Label-Print">Comments&#58;</div>
+        <div class="VehicleInternalNotesContainer ms-crm-Field-Data-Print" data-bind="text: Comments(), attr: { title: Comments() }"></div>
+        <div class="VehicleOptionsContainer">
+            <div class="Label ms-crm-Field-Label-Print">Standard Options&#58;</div>
+            <div class="VehicleOptionsList ms-crm-Field-Data-Print">
+                <span data-bind="visible: (!Options() || Options().length < 1 ? true : false)">No Standard Options Listed</span>
+                <ul data-bind="visible: (!Options() || Options().length < 1 ? false : true), foreach: Options()">
+                    <li data-bind="text: !$data.hasOwnProperty('Value')? Label : Label + ' ' + Value, attr: { title: !$data.hasOwnProperty('Value') ? Label : Label + ' ' + Value }"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="VehicleOptionsContainer">
+            <div class="Label ms-crm-Field-Label-Print">Custom Options&#58;</div>
+            <div class="VehicleOptionsList ms-crm-Field-Data-Print">
+                <span data-bind="visible: (!CustomOptions() || CustomOptions().length < 1 ? true : false)">No Custom Options Listed</span>
+                <ul data-bind="visible: (!CustomOptions() || CustomOptions().length < 1 ? false : true), foreach: CustomOptions()">
+                    <li data-bind="text: !$data.hasOwnProperty('Value')? Label :Label + ' ' + Value, attr: { title: !$data.hasOwnProperty('Value') ? Label : Label + ' ' + Value }"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute; right: 5px; bottom: 5px; z-index: 9999;">
+        <button data-bind="click: $root.ShowPreviousVehicleDetail, visible: (IsFirstRecord() ? false : true)" tabindex="11001" class="ms-crm-Button" id="InventoryLookupDetailsNavigatePrevious" onmouseover=" Mscrm.ButtonUtils.hoverOn(this); " onmouseout=" Mscrm.ButtonUtils.hoverOff(this); " type="button">&#60;&#60; Previous</button>
+        <button data-bind="click: $root.ShowNextVehicleDetail, visible: (IsLastRecord() ? false : true)" tabindex="11002" class="ms-crm-Button" id="InventoryLookupDetailsNavigateNext" type="button">Next &#62;&#62;</button>
+        <button data-bind="click: $root.ShowVehicleDetails" class="ms-crm-Button" id="InventoryLookupDetailsCancel" tabindex="11005" onmouseover=" Mscrm.ButtonUtils.hoverOn(this); " type="button">Hide Details</button>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿<div class="form__control-group--actions--steps is-hidden@widescreen" style="position: absolute; left: 0; right: 5px; bottom: 0;">
+    <a *ngIf="this.SelectedCrustType !== null && this.SelectedSize !== null" (click)="this.stepChange.emit(1)" class="js-next btn btn--small btn--next c-order-nextStep" href="#" data-dpz-track-evt-pagename="Pizza Builder">Next Step</a>
+</div>
+<div id="sizeCrustWrapper" class="is-hidden grid js-sizeCrustWrapper" style="display: block;">
+    <div class="grid__cell--1">
+        <h2 class="step-title">Size &amp; Crust</h2>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Hand Tossed</h3>
+        <p class="section-description">Garlic-seasoned crust with a rich, buttery taste.</p>
+        <div class="row">
+            <label>
+                <input checked (change)="setSelectedCrustTypeAndSize(0,0)" data-flavorcode="HANDTOSS" data-sizecode="10" name="S_PIZZA|Variant" type="radio" class="c-crust-10SCREEN"> <span class="btn--toggle">Small &#40;10"&#40;</span>
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                 <input (change)="setSelectedCrustTypeAndSize(0,1)" data-flavorcode="HANDTOSS" data-sizecode="12" name="S_PIZZA|Variant" type="radio" class="c-crust-12SCREEN"> <span class="btn--toggle">Medium &#40;12"&#41;</span> 
+            </label>
+        </div>
+        <div class="row">
+            <label>
+                 <input (change)="setSelectedCrustTypeAndSize(0,2)" data-flavorcode="HANDTOSS" data-sizecode="14" name="S_PIZZA|Variant" type="radio" class="c-crust-14SCREEN"> <span class="btn--toggle">Large &#40;14"&#41;</span> 
+            </label>
+        </div>
+    </div>
+    <div class="product grid__cell--1 grid__cell--1/4@desktop grid__cell--1@widescreen">
+        <h3 class="section-title">Handmade Pan</h3>
+        <p class="section-description">Two layers of cheese, toppings to the edge, baked in a pan for a crust that is golden and crispy with a buttery taste.</p>
+        <div class="row">
+            <label>
+                 <input (change)="setSelectedCrustTypeAndSize(1,1)" data-flavorcode="NPAN" data-sizecode="12" name="S_PIZZA|Variant" type="radio" class="c-crust-P12IPAZA"> <span class="btn--toggle">Medium &#40;12"&#41;</span> 
+            </label>
+        </div>
+    </div>
+</div>

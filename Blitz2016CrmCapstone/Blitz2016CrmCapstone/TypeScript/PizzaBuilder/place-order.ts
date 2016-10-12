@@ -37,8 +37,28 @@ export class PlaceOrderDialog {
     }
 
     private submitOrder() {
+        /// <summary></summary>
+        let order = {
         
-        alert("You clicked the submit order button");
+        };
+
+        this._client.Create("ch_order", order)
+            .then((recordId) => this.getOrderNumber(recordId))
+            .catch((ex) => this.handleException(ex));
+    }
+
+    private getOrderNumber(recordId: string) {
+        /// <summary></summary>
+        /// <param name="recordId" type="string"></param>
+        this._client.Retrieve("ch_order", recordId, ["ch_ordernumber"])
+            .then((order) => {
+
+                alert("Thank you for placing an order.  Your order number is " + order["ch_ordernumber"]);
+
+                this._isSubmitted = true;
+                this._isSaving = false;
+            })
+            .catch((ex) => this.handleException(ex));
     }
 
     private closeDialog() {

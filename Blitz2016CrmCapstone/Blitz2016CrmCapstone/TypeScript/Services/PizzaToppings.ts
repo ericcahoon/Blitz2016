@@ -12,7 +12,7 @@ export class PizzaToppingsService {
         /// <summary></summary>
         /// <returns type=""></returns>
         return new Promise((resolve) => {
-            this._client.GetGlobalOptionSetOptions("24b7eb1a-2927-44cb-a92b-d54fee161b6")
+            this._client.GetGlobalOptionSetOptions("24b7eb1a-2927-44cb-a92b-d54fee161b60")
                 .then((options) => {
                     resolve(options.map(o => new OptionSet(o["Value"], o["UserLocalizedLabel"]["Label"])));
                 });

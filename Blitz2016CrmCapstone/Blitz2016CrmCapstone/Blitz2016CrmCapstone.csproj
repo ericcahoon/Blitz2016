@@ -160,7 +160,7 @@
     <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
     <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
-    <TypeScriptOutDir>C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\app</TypeScriptOutDir>
+    <TypeScriptOutDir>C:\Data\Development\Projects\Crowe\Demos\Blitz2016\Blitz2016\Blitz2016CrmCapstone\Blitz2016CrmCapstone\app</TypeScriptOutDir>
     <TypeScriptRemoveComments>True</TypeScriptRemoveComments>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />

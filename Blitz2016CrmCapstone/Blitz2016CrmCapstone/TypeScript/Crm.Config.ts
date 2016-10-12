@@ -5,8 +5,8 @@ export module Crm {
         Tenant: string = null;
         ClientId: string = "58ED4A27-AFAB-4AB5-A330-5B2B287BAE1C";
         PageUrl: string = "http://localhost:8013/";
-        AuthServiceUri: string = "http://localhost:48582/api/Login";
-        AdfsInstanceUri: string = "https://sts.crowelocalvmadfs.com:444/adfs/";
+        //AuthServiceUri: string = "http://localhost:48582/api/Login";
+        //AdfsInstanceUri: string = "https://sts.crowelocalvmadfs.com:444/adfs/";
         AuthType: adal.AuthType = adal.AuthType.OnPrem;
         DisplayCall: (navigationUrl: string) => void;
     }

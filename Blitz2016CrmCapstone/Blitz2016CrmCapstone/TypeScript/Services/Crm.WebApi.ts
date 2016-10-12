@@ -213,6 +213,23 @@ export module Crm {
                                 if (popup.location.pathname.indexOf(`/${dummyAuthPage}`) >= 0) {
                                     window.clearInterval(intervalId);
 
+
+                                    if (popup.location.hash.indexOf("#id_token") > -1) {
+
+                                        authContext.handleWindowCallback(popup.location.hash);
+                                        popup.close();
+                                        const user = authContext.getCachedUser();
+
+                                        if (user) {
+                                            resolve(user);
+                                        }
+                                        else {
+                                            reject(authContext.getLoginError());
+                                        }
+                                        return;                                        
+                                    }
+
+
                                     const code = self._getParameterByName("code", popup.location.href);
 
                                     //ADFS's oauth 2.0 implementation only supports the code flow, so
@@ -221,7 +238,6 @@ export module Crm {
                                     if (!code) {
                                         reject("Failed to login into ADFS and retrieve a code token");
                                     }
-
 
                                     //Convert the code token to a JWT
                                     self.convertCodeToToken(code)
@@ -290,6 +306,7 @@ export module Crm {
             req.setRequestHeader("OData-Version", "4.0");
             req.setRequestHeader("Accept", "application/json");
             req.setRequestHeader("Authorization", `Bearer ${token}`);
+            req.setRequestHeader("Access-Control-Allow-Origin", "localhost");
 
             headers = headers || [];
             for (let header of headers) {
